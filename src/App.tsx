@@ -2,7 +2,8 @@ import { Provider } from 'react-redux';
 import store from './store';
 import { Catalog } from './components/Catalog';
 import { Container } from '@mui/material';
-import { AppRoutes } from './routes';
+import { Cart } from './components/Cart';
+
 
 function App() {
 
@@ -10,7 +11,7 @@ function App() {
     <Provider store={store}>
       <Container>
         <Catalog />
-        <AppRoutes />
+        <Cart />
       </Container>
     </Provider>
   )
